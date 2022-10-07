@@ -238,7 +238,7 @@ body {
   line-height: 21px;
 }
 
-/* ___________________________footer___________________________ */
+/* ___________________________footer-index___________________________ */
 
 .footer-adress-text {
   font-family: "rubik", sans-serif;
@@ -254,19 +254,43 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .contacts-adress-number {
   font-style: normal;
-  color: #000000;
+  color: #ffffff;
   text-decoration: underline;
   font-size: 16px;
   line-height: 20px;
 }
 
+.page-footer {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.services {
+  color: #000000;
+  background-color: #F0F0F0;
+
+}
+
+.delivery {
+  color: #000000;
+  background-color: #F0F0F0;
+
+}
+
+.subscribe {
+  color: #000000;
+  background-color: #F0F0F0;
+
+}
+
+/* ___________________________catalog___________________________  */
 .monopod {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -288,17 +312,21 @@ body {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
+  background-color: #F0F0F0;
+
 }
 
 .range-price-item {
   font-size: 14px;
   line-height: 20px;
-  opacity: 0.3
+  opacity: 0.3;
+  background-color: #F0F0F0;
 }
 
 .catalog-filter-group {
   font-size: 16px;
   line-height: 20px;
+  background-color: #F0F0F0;
 }
 
 .catalog-filter-title {
@@ -321,6 +349,11 @@ body {
   background-image: linear-gradient(#ffffff 35%, #FFE17F 35% 65%, #ffffff 65%);
   width: 220px;
   display: block;
+}
+
+.catalog-sorting {
+  background-color: #F0F0F0;
+
 }
 
 .catalog-sorting-text {
