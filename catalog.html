@@ -69,7 +69,7 @@
     </header>
 
     <main class="main-index">
-      <h2 class="catalog-products monopod">Моноподы для селфи</h2>
+      <h2 class="main-title">Моноподы для селфи</h2>
       <ul class="breadcrumb">
         <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Главная</a></li>
         <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Каталог товаров</a></li>
@@ -78,7 +78,7 @@
       <section class="catalog-products">
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="POST">
           <div class="catalog-filter">
-          <h2 class="catalog-filter-text">фильтр:</h2>
+            <h2 class="catalog-filter-text">фильтр:</h2>
             <input type="range" min="0" max="5000" step="1" value="3000" />
             <ol class="range-price">
               <li class="range-price-item">
@@ -88,58 +88,59 @@
                 <p class="range-price-to">До 5000</p>
               </li>
           </div>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цвет</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="black" checked>
-                  Черный
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="white" checked>
-                  Белый
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="blue">
-                  Синий
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="red">
-                  Красный
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="purple">
-                  Розовый
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Bluetooth</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="with" checked>
-                  Есть
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="without">
-                  Нет
-                </label>
-              </li>
-          </fieldset>
-          <button class="catalog-filter-button" type="submit">Показать</button>
+        </form>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Цвет</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="black" checked>
+                Черный
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="white" checked>
+                Белый
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="blue">
+                Синий
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="red">
+                Красный
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="purple">
+                Розовый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Bluetooth</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="with" checked>
+                Есть
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-group" value="without">
+                Нет
+              </label>
+            </li>
+        </fieldset>
+        <button class="primary-button catalog-filter" type="submit">Показать</button>
       </section>
       <div class="catalog-sorting">
         <h2 class="catalog-sorting-text">Сортировка:</h2>
@@ -243,23 +244,17 @@
         </ul>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://t.me/htmlacademy">
-              <img class="footer-social-icon" src="images/svg/icon-telegram.svg" width="40" height="40"
-                alt="Иконка Телеграм">
+            <a class="footer-social-link telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="footer-social-icon" src="images/svg/icon-Youtube.svg" width="40" height="40"
-                alt="Иконка Ютюб">
+            <a class="footer-social-link YouTube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
-              <img class="footer-social-icon" src="images/svg/icon-twitter.svg" width="40" height="40"
-                alt="Иконка Твиттер">
+            <a class="footer-social-link twitter" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">twitter</span>
             </a>
           </li>

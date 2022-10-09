@@ -1,6 +1,6 @@
 @font-face {
   font-family: "raleway";
-  src: url(/fonts/raleway/raleway-800.woff2) format(woff2);
+  src: url(../fonts/raleway/raleway-800.woff2) format(woff2);
   font-style: normal;
   font-weight: 800;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "rubik";
-  src: url(/fonts/rubik/rubik-400.woff2) format(woff2);
+  src: url(..contacts-text-number/fonts/rubik/rubik-400.woff2) format(woff2);
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -17,11 +17,15 @@
 
 @font-face {
   font-family: "rubik";
-  src: url(/fonts/rubik/rubik-700.woff2) format(woff2);
+  src: url(../fonts/rubik/rubik-700.woff2) format(woff2);
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 
+}
+
+:root {
+  --primaryColor: #ffe17f;
 }
 
 body {
@@ -33,15 +37,13 @@ body {
 }
 
 .page-header {
-  color: #000000;
-  background-color: #FFE17F;
-
+  background-color: var(--primaryColor);
 }
 
 .user-menu-link {
   line-height: 21px;
   color: #000000;
-  background-color: #FFE17F;
+  background-color: var(--primaryColor);
   text-decoration: none;
   align-items: center;
 }
@@ -51,7 +53,7 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   color: #000000;
-  background-color: #FFE17F;
+  background-color: var(--primaryColor);
   text-decoration: none;
   letter-spacing: 0.2em
 }
@@ -106,39 +108,18 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: #000000;
+  font-weight: 800;
 }
 
-.services-action-button-changed {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+.primary-button.services.active {
   color: #FFE17F;
-  background-color: #000000;
-  text-decoration: none;
-  width: 160px;
-  display: block;
+  background: #000000;
 
 }
 
-.services-action-button {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: #FFE17F;
-  text-decoration: none;
-  background-image: linear-gradient(#ffffff 35%, #FFE17F 35% 65%, #ffffff 65%);
-  width: 160px;
+.primary-button.about-us {
+  width: 270px;
   display: block;
-
 }
 
 .services-described-title {
@@ -178,21 +159,6 @@ body {
 
 
 
-.delivery-about-us-faq {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: #FFE17F;
-  text-decoration: none;
-  background-image: linear-gradient(#ffffff 35%, #FFE17F 35% 65%, #ffffff 65%);
-  width: 270px;
-  display: block;
-}
 
 .contacts-main-title {
   font-family: 'Raleway', sans-serif;
@@ -206,18 +172,7 @@ body {
   text-decoration: underline;
 }
 
-.feedback {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: #FFE17F;
-  text-decoration: none;
-  background-image: linear-gradient(#ffffff 35%, #FFE17F 35% 65%, #ffffff 65%);
+.primary-button.feedback {
   width: 259px;
   display: block;
 
@@ -291,7 +246,7 @@ body {
 }
 
 /* ___________________________catalog___________________________  */
-.monopod {
+.main-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
