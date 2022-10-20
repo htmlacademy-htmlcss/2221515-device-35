@@ -31,6 +31,16 @@
   --paginationColor: #EBEBEB;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 html {
   height: 100%;
@@ -39,8 +49,10 @@ html {
 body {
   margin: 0;
   font-family: "rubik", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+
   color: var(--primaryTextColor);
   background-color: #ffffff;
 }
@@ -56,31 +68,42 @@ body {
   width: 1160px;
 }
 
-/* .page-header .container {
-} */
+.page-header {
+  background-color: var(--primaryColor);
+
+}
+
+.header-wrapper {
+  width: 1040px;
+  padding: 0 60px;
+}
 
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--primaryColor);
   width: 100%;
+  margin-top: 40px;
 }
 
 .logo {
   width: 100%;
 }
 
+.logo-image {
+  margin-top: -20px;
+}
+
 .user-menu {
-  width: 580px;
+  width: 456px;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  list-style-type: none;
 }
 
 .header-form {
-  width: 580px;
-  margin: 0;
+  max-width: 456px;
 }
 
 .user-menu-link {
@@ -91,7 +114,11 @@ body {
 }
 
 .user {
-  margin: 0 198px 0 40px;
+  margin-right: 198px;
+}
+
+.user-menu-item.compare {
+  margin-right: auto;
 }
 
 .login {
@@ -110,7 +137,7 @@ body {
   color: var(--primaryTextColor);
   background-color: var(--primaryColor);
   text-decoration: none;
-  letter-spacing: 0.2em
+  letter-spacing: 0.2em;
 }
 
 .catalog-menu-list {
@@ -122,16 +149,17 @@ body {
 }
 
 .catalog-menu-button {
-  width: 293px;
-  margin: 0 287px 0 0;
+  margin-right: 287px;
+  margin-top: 50px;
 }
 
 .navigation-list.menu {
-  margin: 0;
-  padding: 0;
-  width: 579px;
+  width: 472px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  margin-left: auto;
+  list-style-type: none;
 }
 
 .navigation-item {
@@ -144,26 +172,31 @@ body {
   line-height: 21px;
   color: var(--primaryTextColor);
   width: 211px;
-  display: block;
+  padding-bottom: 27px;
 }
 
 .catalog-menu-item {
+  height: 120px;
+  margin-top: 30px;
+  margin-bottom: 27px;
   display: flex;
+  flex-direction: column;
 }
 
 .column-1 {
-  display: block;
   width: 222px;
 }
 
 .column-2 {
-  display: block;
   width: 211px;
 }
 
 .column-3 {
-  display: block;
   width: 211px;
+}
+
+.slider-image {
+  margin-right: 40px;
 }
 
 .slider-item {
@@ -179,6 +212,18 @@ body {
   font-family: "raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  margin-top: -20px;
+  margin-bottom: 29px;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item-text {
+  margin: 0;
 }
 
 .primary-button {
@@ -198,18 +243,32 @@ body {
   display: block;
 }
 
-.slider-item-table {
+.quadrocopter {
+  margin-top: 60px;
+}
+
+.fitness-bracelet {
+  margin-top: 60px;
+}
+
+.monopode {
+  margin-top: 60px;
+}
+
+.slider-item-info {
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
+  margin-top: 60px;
+  list-style-type: none;
 }
 
-.slider-item-table-mean {
+.slider-item-info-mean {
   padding-right: 58px;
 }
 
-.slider-item-table-description {
+.slider-item-info-description {
   font-family: "rubik", sans-serif;
   font-size: 16px;
   line-height: 30px;
@@ -217,11 +276,15 @@ body {
 
 .main-catalog-list {
   display: flex;
+  margin: 301px 0 70px 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
 .main-catalog-item {
   width: 160px;
-
+  height: 60px;
 }
 
 
@@ -247,6 +310,12 @@ body {
   width: 280px;
   padding: 0;
   margin: 0;
+  margin-top: 17px;
+  box-sizing: border-box;
+}
+
+.services-action-item {
+  margin-top: 56px;
 }
 
 .primary-button.services.active {
@@ -254,9 +323,10 @@ body {
   background: var(--primaryTextColor);
 }
 
-.primary-button.about-us {
+.primary-button.about-delivery {
   width: 270px;
   display: block;
+  margin-top: 40px;
 }
 
 .services-described {
@@ -270,6 +340,13 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  margin-top: 73px;
+}
+
+.services-described-about {
+  display: block;
+  margin-top: 34px;
 }
 
 .delivery-button {
@@ -289,6 +366,9 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
 }
 
 .delivery-link {
@@ -304,15 +384,23 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
 }
 
 .contacts-text-number {
+  margin: 0;
+  margin-top: -30px;
+  margin-bottom: 30px;
   text-decoration: underline;
 }
 
 .primary-button.feedback {
   width: 259px;
   display: block;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .subscribe-title {
@@ -320,6 +408,7 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin: 64px 252px 160px 0;
 }
 
 .subscribe-form button {
@@ -327,6 +416,37 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-transform: uppercase;
+  padding: 18px 39px;
+  margin-right: 200px;
+}
+
+.subscribe {
+  color: var(--primaryTextColor);
+  background-color: var(--secondaryColor);
+}
+
+.subscribe .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscribe-text-free {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+.subscribe-form {
+  display: flex;
+  height: 57px;
+  margin-bottom: 56px;
+}
+
+.subscribe-submit {
+  padding: 18px 39px;
 }
 
 .footer-services {
@@ -385,61 +505,68 @@ body {
 }
 
 .delivery {
-  padding: 20px;
+  margin: 70px auto;
 }
 
 .delivery-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   width: 1160px;
+  padding: 40px 125px;
+
 }
 
 .general-info {
   display: flex;
-  padding: 20px 0;
 }
 
 .about-us {
   width: 520px;
   margin-right: auto;
+  margin-top: 40px;
 }
 
-.subscribe {
-  color: var(--primaryTextColor);
-  background-color: var(--secondaryColor);
-}
-
-.subscribe .container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.subscribe-title {
-  width: 348px;
-  margin-right: 252px;
+.about-us-text {
   margin: 0;
+  margin-bottom: 30px;
 }
 
-/* Не смог победить форму input, не принимает размеры */
-.subscribe-form {
-  width: 1160px;
+.delivery-list {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
 }
 
-.input[subscribe-email] {
-  width: 557px;
+.delivery-item {
+  margin-bottom: 19px;
 }
 
-.subscribe-submit {
-  margin-left: 39px;
+.contacts {
+  margin-top: 40px;
 }
 
-.subscribe-text {
-  margin-left: 259px;
+.contacts-text {
+  margin: 0;
+  margin-bottom: 30px;
 }
+
+.contacts-title {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 15px;
+  color: var(--primaryDarkColor);
+}
+
+
 
 .footer-logo {
   width: 100%;
 }
-
-.footer-contacts-addres {}
 
 .services-list {
   display: flex;
