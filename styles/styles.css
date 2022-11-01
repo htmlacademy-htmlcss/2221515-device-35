@@ -248,23 +248,24 @@ body {
   text-transform: uppercase;
   color: var(--primaryTextColor);
   background-color: var(--primaryColor);
-  ;
   text-decoration: none;
   background-image: linear-gradient(#ffffff 35%, #FFE17F 35% 65%, #ffffff 65%);
-  width: 220px;
   display: block;
 }
 
-.quadrocopter {
+.primary-button.quadrocopter {
   margin-top: 60px;
+  width: 220px;
 }
 
-.fitness-bracelet {
+.primary-button.fitness-bracelet {
   margin-top: 60px;
+  width: 220px;
 }
 
-.monopode {
+.primary-button.monopode {
   margin-top: 60px;
+  width: 220px;
 }
 
 .slider-item-info {
@@ -353,6 +354,7 @@ body {
 }
 
 .services-action {
+  position: relative;
   width: 280px;
   padding: 0;
   margin: 0;
@@ -360,14 +362,30 @@ body {
   box-sizing: border-box;
 }
 
+.services-action::after {
+position: absolute;
+content: "";
+width: 7px;
+height: 319px;
+background-color: var(--primaryTextColor);
+top: 0%;
+left: 280px;
+}
+
 .services-action-item {
   margin-top: 56px;
   list-style-type: none;
 }
 
+.primary-button.services {
+  width: 160px;
+}
+
 .primary-button.services.active {
+  display: flex;
   color: var(--primaryColor);
   background: var(--primaryTextColor);
+  width: 280px;
 }
 
 .primary-button.about-delivery {
@@ -487,16 +505,6 @@ body {
   height: 100px;
 }
 
-.about-us-title {
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  margin: 0;
-  margin-bottom: 48px;
-  padding: 0;
-  padding-top: 47px;
-}
 
 .delivery-link {
   font-weight: 700;
@@ -625,9 +633,20 @@ body {
 }
 
 .footer-servises-logo {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 62px;
+}
+
+.footer-servises-logo::after {
+position: absolute;
+width: 80px;
+height: 7px;
+content: "";
+left: 0%;
+top: 20px;
+background-color: var(--primaryHoverColor);
 }
 
 .services-name {
@@ -663,9 +682,31 @@ body {
 }
 
 .about-us {
+  position: relative;
   width: 520px;
   margin-right: auto;
   margin-top: 70px;
+}
+
+.about-us::after {
+  position: absolute;
+  width: 84px;
+  height: 7px;
+  background-color: var(--primaryTextColor);
+  content: "";
+  top: 0%;
+  left: 0%;
+}
+
+.about-us-title {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+  padding-top: 47px;
 }
 
 .about-us-text {
@@ -684,7 +725,18 @@ body {
 }
 
 .contacts {
+  position: relative;
   margin-top: 70px;
+}
+
+.contacts::after {
+  position: absolute;
+  width: 84px;
+  height: 7px;
+  background-color: var(--primaryTextColor);
+  content: "";
+  top: 0%;
+  left: 0%;
 }
 
 .contacts-text {
