@@ -11,9 +11,11 @@
     <header class="page-header container">
       <div class="header-wrapper">
         <nav class="navigation">
-          <a class="logo" href="#">
-            <img class="logo-image" src="images/svg/header-main-logo.svg" alt="Девайс" width="145" height="36">
-          </a>
+          <div class="header-logo">
+            <a class="main-logo" href="#">
+              <img class="logo-image" src="images/svg/header-main-logo.svg" alt="Девайс" width="145" height="36">
+            </a>
+          </div>
           <form class="header-form" action="#" method="POST">
             <input type="search" placeholder="Поиск по сайту">
             <button class="header-search" type="submit">Найти</button>
@@ -21,11 +23,13 @@
           <ul class="user-menu">
             <li class="user-menu-item user">
               <div class="user-menu-block user">
-                <svg aria-hidden="true" focusable="false" width="13" height="12" viewBox="0 0 13 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z"/>
-                </svg>
-                <a class="user-menu-link user" href="login.html">Войти</a>
+                <a class="user-menu-link user" href="login.html"><svg aria-hidden="true" focusable="false" width="13"
+                    height="12" viewBox="0 0 13 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z" />
+                  </svg>
+                  <span class="user-menu-link-text">Войти</span>
+                </a>
               </div>
             </li>
             <li class="user-menu-item exit">
@@ -33,21 +37,25 @@
             </li>
             <li class="user-menu-item compare">
               <div class="user-menu-block compare">
-                <svg aria-hidden="true" focusable="false" width="10" height="12" viewBox="0 0 10 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 0H4V12H6V0Z" />
-                  <path d="M2 4H0V12H2V4Z" />
-                  <path d="M10 3H8V12H10V3Z" />
-                </svg>
-                <a class="user-menu-link compare" href="compare.html">Сравнить</a>
+                <a class="user-menu-link compare" href="compare.html"><svg aria-hidden="true" focusable="false"
+                    width="10" height="12" viewBox="0 0 10 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0H4V12H6V0Z" />
+                    <path d="M2 4H0V12H2V4Z" />
+                    <path d="M10 3H8V12H10V3Z" />
+                  </svg>
+                  <span class="user-menu-link-text">Сравнить</span>
+                </a>
               </div>
             </li>
             <li class="user-menu-item cart">
               <div class="user-menu-block cart">
-                <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"/>
-                </svg>
-                <a class="user-menu-link cart" href="cart.html">Корзина</a>
+                <a class="user-menu-link cart" href="cart.html"><svg aria-hidden="true" focusable="false" width="16"
+                    height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z" />
+                  </svg>
+                  <span class="user-menu-link-text">Корзина</span>
+                </a>
               </div>
             </li>
           </ul>
@@ -94,7 +102,9 @@
               </h3>
               <p class="slider-item-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                 мощным лазером, замаскированным под стандартную камеру.</p>
-              <a class="primary-button quadrocopter" href="#">Подробнее</a>
+              <a class="primary-button quadrocopter" href="#">
+                <span class="primary-button-text">Подробнее</span>
+              </a>
               <ul class="slider-item-info">
                 <li class="slider-item-info-mean">800м</li>
                 <li class="slider-item-info-description">Дальность полета</li>
@@ -118,7 +128,9 @@
               <h3 class="slider-item-title">Худеем правильно!</h3>
               <p class="slider-item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
                 не пропускать занятия и соблюдать диету.</p>
-              <a class="primary-button fitness-bracelet" href="#">Подробнее</a>
+              <a class="primary-button fitness-bracelet" href="#">
+                <span class="primary-button-text"> Подробнее</span>
+              </a>
               <ul class="slider-item-info">
                 <li class="slider-item-info-mean">48 часов</li>
                 <li class="slider-item-info-description">Без подзарядки</li>
@@ -138,7 +150,9 @@
               <h3 class="slider-item-title">Делай селфи, как Бен Стиллер!</h3>
               <p class="slider-item-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                 Карл!) метров длиной и весом всего 5 кг.</p>
-              <a class="primary-button monopode" href="#">Подробнее</a>
+              <a class="primary-button monopode" href="#">
+                <span class="primary-button-text"> Подробнее</span>
+              </a>
               <ul class="slider-item-info">
                 <li class="slider-item-info-mean">8,5м</li>
                 <li class="slider-item-info-description">Длина палки</li>
@@ -165,58 +179,57 @@
       <section class="main-catalog container">
         <ul class="main-catalog-list">
           <li class="main-catalog-item">
-            <div class="main-catalog-background">
-              <div class="main-catalog-pic oculus-vr">
-              </div>
-            </div>
             <a class="main-catalog-link oculus-vr" href="#">
-              Виртуальная реальность
+              <div class="main-catalog-background">
+                <div class="main-catalog-pic oculus-vr">
+                </div>
+              </div>
+              <span class="main-catalog-text">Виртуальная реальность</span>
             </a>
           </li>
           <li class="main-catalog-item">
-            <div class="main-catalog-background">
-              <div class="main-catalog-pic monopod">
-              </div>
-            </div>
             <a class="main-catalog-link monopod" href="#">
-              Моноподы<br>
-              для селфи
+              <div class="main-catalog-background">
+                <div class="main-catalog-pic monopod">
+                </div>
+              </div>
+              <span class="main-catalog-text">Моноподы для селфи</span>
             </a>
           </li>
           <li class="main-catalog-item">
-            <div class="main-catalog-background">
-              <div class="main-catalog-pic action-camera">
-              </div>
-            </div>
             <a class="main-catalog-link action-camera" href="#">
-              Экшн-камеры
+              <div class="main-catalog-background">
+                <div class="main-catalog-pic action-camera">
+                </div>
+              </div>
+              <span class="main-catalog-text">Экшн-камеры</span>
             </a>
           </li>
           <li class="main-catalog-item">
-            <div class="main-catalog-background">
-              <div class="main-catalog-pic fitness-bracer">
-              </div>
-            </div>
             <a class="main-catalog-link fitness-bracer" href="#">
-              Фитнес-браслеты
+              <div class="main-catalog-background">
+                <div class="main-catalog-pic fitness-bracer">
+                </div>
+              </div>
+              <span class="main-catalog-text">Фитнес-браслеты</span>
             </a>
           </li>
           <li class="main-catalog-item">
-            <div class="main-catalog-background">
-              <div class="main-catalog-pic smart-watch">
-              </div>
-            </div>
             <a class="main-catalog-link smart-watch" href="#">
-              Умные часы
+              <div class="main-catalog-background">
+                <div class="main-catalog-pic smart-watch">
+                </div>
+              </div>
+              <span class="main-catalog-text">Умные часы</span>
             </a>
           </li>
           <li class="main-catalog-item">
-            <div class="main-catalog-background">
-              <div class="main-catalog-pic quattrocopter">
-              </div>
-            </div>
             <a class="main-catalog-link quattrocopter" href="#">
-              Квадрокоптеры
+              <div class="main-catalog-background">
+                <div class="main-catalog-pic quattrocopter">
+                </div>
+              </div>
+              <span class="main-catalog-text">Квадрокоптеры</span>
             </a>
           </li>
         </ul>
@@ -225,13 +238,19 @@
         <div class="container">
           <ul class="services-action">
             <li class="services-action-item">
-              <button class="primary-button services active" type="button">Доставка</button>
+              <button class="primary-button services active" type="button">
+                <span class="primary-button-text">Доставка</span>
+              </button>
             </li>
             <li class="services-action-item">
-              <button class="primary-button services" type="button">Гарантия</button>
+              <button class="primary-button services" type="button">
+                <span class="primary-button-text">Гарантия</span>
+              </button>
             </li>
             <li class="services-action-item">
-              <button class="primary-button services" type="button">Кредит</button>
+              <button class="primary-button services" type="button">
+                <span class="primary-button-text">Кредит</span>
+              </button>
             </li>
           </ul>
           <ul class="services-describe">
@@ -257,10 +276,11 @@
         </div>
       </section>
       <section class="special-delivery container">
-        <div class="delivery-icon"></div>
-        <button class="delivery-button" type="button">Доставим редкий товар под заказ
+        <button class="delivery-button" type="button">
+          <div class="delivery-icon"></div>
+          <span class="delivery-button-text">Доставим редкий товар под заказ</span>
+          <div class="delivery-faq"></div>
         </button>
-        <div class="delivery-faq"></div>
       </section>
       <div class="general-info container">
         <section class="about-us">
@@ -282,7 +302,9 @@
             </li>
           </ul>
           <span class="delivery-about-us">
-            <a class="primary-button about-delivery" href="#">Подробнее о нас</a>
+            <a class="primary-button about-delivery" href="#">
+              <span class="primary-button-text">Подробнее о нас</span>
+            </a>
           </span>
         </section>
         <section class="contacts">
@@ -296,7 +318,9 @@
           <p class="contacts-text">пн—пт: с 10:00 до 22:00 <br>
             сб—вс: с 10:00 до 19:00</p>
           <span class="feedback">
-            <a class="primary-button feedback" href="#">Напишите нам</a>
+            <a class="primary-button feedback" href="#">
+              <span class="primary-button-text">Напишите нам</span>
+            </a>
           </span>
         </section>
       </div>
