@@ -157,6 +157,11 @@ body {
   width: 13px;
   height: 12px;
 }
+.user-menu-link.exit {
+  margin-left: 20px;
+  padding-left: 0;
+  opacity: 0.3;
+}
 
 .user-menu-link.compare {
   position: relative;
@@ -229,29 +234,46 @@ body {
   position: relative;
   display: flex;
   align-items: flex-end;
+  width: 50%;
+  padding: 0;
+  padding-top: 43px;
+  padding-bottom: 1px;
+  box-sizing: border-box;
+}
+
+.catalog-menu-sub-button {
   font-family: "raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 18px;
-  width: 50%;
   text-decoration: none;
   letter-spacing: 0.2em;
   border: none;
   background-color: var(--primaryColor);
-  padding: 0;
-  padding-top: 55px;
-  padding-bottom: 30px;
+  padding: 17px 68px 17px 0;
 }
 
-.catalog-menu-button::after {
+.catalog-menu-sub-button::after {
   position: absolute;
   content: "";
   background: url(../images/svg/catalog-menu.svg) no-repeat 50% 50%;
   width: 50px;
   height: 50px;
-  top: 39%;
+  top: 46%;
   right: 44%;
+  opacity: 0.3;
+}
 
+.catalog-menu-sub-button:hover::after {
+  opacity: 1;
+}
+
+.catalog-menu-sub-button:active::after {
+  opacity: 1;
+}
+
+.catalog-menu-sub-button:focus-visible {
+  outline: 2px solid var(--battonFocusColor);
 }
 
 .navigation-list.menu {
@@ -484,20 +506,16 @@ body {
   transform: translateY(-50%);
 }
 
-.primary-button.quadrocopter:hover {
+.primary-button.quadrocopter:hover::before {
   background-color: var(--primaryColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
-.primary-button.quadrocopter:active {
+.primary-button.quadrocopter:active::before {
   background-color: var(--battonActiveColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
 .primary-button.quadrocopter:focus-visible {
@@ -530,20 +548,16 @@ body {
   transform: translateY(-50%);
 }
 
-.primary-button.fitness-bracelet:hover {
+.primary-button.fitness-bracelet:hover::before {
   background-color: var(--primaryColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
-.primary-button.fitness-bracelet:active {
+.primary-button.fitness-bracelet:active::before {
   background-color: var(--battonActiveColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
 .primary-button.fitness-bracelet:focus-visible {
@@ -572,20 +586,16 @@ body {
   transform: translateY(-50%);
 }
 
-.primary-button.monopode:hover {
+.primary-button.monopode:hover::before {
   background-color: var(--primaryColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
-.primary-button.monopode:active {
+.primary-button.monopode:active::before {
   background-color: var(--battonActiveColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
 .primary-button.monopode:focus-visible {
@@ -613,20 +623,16 @@ body {
   transform: translateY(-50%);
 }
 
-.primary-button.catalog-filter:hover {
+.primary-button.catalog-filter:hover::before {
   background-color: var(--primaryColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
-.primary-button.catalog-filter:active {
+.primary-button.catalog-filter:active::before {
   background-color: var(--battonActiveColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
 .primary-button.catalog-filter:focus-visible {
@@ -892,6 +898,18 @@ body {
   transform: translateY(-50%);
 }
 
+.primary-button.services:hover::before {
+  background-color: var(--primaryColor);
+  height: 40px;
+  top: 50%;
+}
+
+.primary-button.services:active::before {
+  background-color: var(--primaryHoverColor);
+  height: 40px;
+  top: 50%;
+}
+
 .primary-button.services.active {
   display: flex;
   color: var(--primaryColor);
@@ -940,20 +958,16 @@ body {
   transform: translateY(-50%);
 }
 
-.primary-button.about-delivery:hover {
+.primary-button.about-delivery:hover::before {
   background-color: var(--primaryColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
-.primary-button.about-delivery:active {
+.primary-button.about-delivery:active::before {
   background-color: var(--battonActiveColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
 .primary-button.about-delivery:focus-visible {
@@ -1149,20 +1163,16 @@ body {
   transform: translateY(-50%);
 }
 
-.primary-button.feedback:hover {
+.primary-button.feedback:hover::before {
   background-color: var(--primaryColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
-.primary-button.feedback:active {
+.primary-button.feedback:active::before {
   background-color: var(--battonActiveColor);
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  height: 40px;
+  top: 50%;
 }
 
 .primary-button.feedback:focus-visible {
@@ -1268,24 +1278,31 @@ body {
 .contacts-adress-number {
   display: flex;
   width: 30%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contacts-adress-number-link {
   font-style: normal;
   color: var(--whiteColor);
   text-decoration: underline;
   font-size: 16px;
   line-height: 20px;
-  justify-content: flex-end;
-  align-items: center;
 }
 
-.contacts-adress-number:hover {
+.contacts-adress-number-link:hover {
   color: var(--primaryHoverColor);
 }
 
-.contacts-adress-number:active {
+.contacts-adress-number-link:active {
   opacity: 0.3;
 }
 
 .contacts-adress-number:focus-visible {
+  outline: none;
+}
+
+.contacts-adress-number-link:focus-visible {
   outline: 2px solid var(--battonFocusColor);
 }
 
@@ -1807,6 +1824,10 @@ body {
 
 .product-card:focus-within {
   outline: 2px solid var(--battonFocusColor);
+}
+
+.product-card:focus {
+  outline: none;
 }
 
 .product-card-link:focus-visible {
