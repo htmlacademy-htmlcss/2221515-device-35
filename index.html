@@ -18,7 +18,9 @@
           </div>
           <form class="header-form" action="#" method="POST">
             <input type="search" placeholder="Поиск по сайту">
-            <button class="header-search" type="submit">Найти</button>
+            <button class="header-search" type="submit">
+              <span class="header-search-button-text"> Найти</span>
+            </button>
           </form>
           <ul class="user-menu">
             <li class="user-menu-item user">
@@ -77,9 +79,10 @@
           <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
-          <ul class="slider-list">
+          <ol class="slider-list">
             <li class="slider-item quadrocopter slider-item-active">
               <img class="slider-image" src="images/quadrocopter.png" alt="Квадрокоптеры" width="560" height="560">
+              <span class="visually-hidden">Первый слайд</span>
               <div class="slider-item-description">
                 <h3 class="slider-item-title">Порхает как бабочка,<br>
                   жалит как пчела!
@@ -104,6 +107,7 @@
             <li class="slider-item fitness-bracelet">
               <img class="slider-image" src="images/fitness-bracelet.png" alt="Фитнес-браслеты" width="560"
                 height="560">
+              <span class="visually-hidden">Второй слайд</span>
               <div class="slider-item-description">
                 <h3 class="slider-item-title">Худеем<br>правильно!</h3>
                 <p class="slider-item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
@@ -119,6 +123,7 @@
             </li>
             <li class="slider-item monopode">
               <img class="slider-image" src="images/monopode.png" alt="Моноподы" width="560" height="560">
+              <span class="visually-hidden">Третий слайд</span>
               <div class="slider-item-description">
                 <h3 class="slider-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
                 <p class="slider-item-text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь,
@@ -142,7 +147,7 @@
                 </div>
               </div>
             </li>
-          </ul>
+          </ol>
           <div class="slider-indicators">
             <button class="slider-indicator active" type="button">
             </button>
@@ -275,8 +280,7 @@
             длительными тест-драйвами, распаковками, а также акции, <br>
             спецпредложения и вот это вот всё.</p>
           <form class="subscribe-form container" action="#" method="post">
-            <input type="subscribe-email" placeholder="Ваш E-mail" style="
-            width: 557px">
+            <input type="subscribe-email" placeholder="Ваш e-mail">
             <button type="subscribe-submit">Подписаться</button>
             <p class="subscribe-text-free">Это бесплатно</p>
           </form>
