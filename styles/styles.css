@@ -2430,6 +2430,36 @@ body {
   padding-left: 36px;
 }
 
+.control::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  outline: 2px solid transparent;
+  top: -8%;
+  left: -2%;
+}
+
+.control:focus-within::before {
+  outline: 2px solid var(--battonFocusColor);
+}
+
+.control:focus {
+  outline: none;
+}
+
+.control:focus-visible {
+  outline: none;
+}
+
+.control-input:focus {
+  outline: none;
+}
+
+.control-input:focus-visible {
+  outline: none;
+}
+
 .control-label::before {
   position: absolute;
   box-sizing: border-box;
@@ -2634,6 +2664,10 @@ body {
   background-color: #ffffff;
   padding: 18px 30px;
   width: 760px;
+}
+
+.get-more:focus-visible {
+  outline: 2px solid var(--battonFocusColor);
 }
 
 .pagination {
