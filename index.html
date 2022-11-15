@@ -17,55 +17,94 @@
             </a>
           </div>
           <form class="header-form" action="#" method="POST">
-            <input type="search" placeholder="Поиск по сайту">
-            <button class="header-search" type="submit">
-              <span class="header-search-button-text"> Найти</span>
-            </button>
+            <label class="header-label form">
+              <input type="search" placeholder="Поиск по сайту">
+            </label>
+            <label class="header-label button">
+              <button class="header-search" type="submit">
+                <span class="header-search-button-text"> Найти</span>
+              </button>
+            </label>
           </form>
           <ul class="user-menu">
             <li class="user-menu-item user">
-              <a class="user-menu-link user" href="login.html">Войти</a>
+              <a class="user-menu-link user" href="#">Войти</a>
             </li>
             <li class="user-menu-item exit">
-              <a class="user-menu-link exit" href="compare.html"></a>
+              <a class="user-menu-link exit" href="#"></a>
             </li>
             <li class="user-menu-item compare">
-              <a class="user-menu-link compare" href="compare.html">Сравнить</a>
+              <a class="user-menu-link compare" href="#">Сравнить</a>
             </li>
             <li class="user-menu-item cart">
-              <a class="user-menu-link cart" href="cart.html">Корзина</a>
+              <a class="user-menu-link cart" href="#">Корзина</a>
+              <div class="popover popover-disabled">
+                <ul class="popover-content">
+                  <li class="popover-content-link">
+                    <img class="popover-content-link-img" src="./images/cataloge/diletant.jpg"
+                      alt="Любительская селфи-палка" width="39px" height="43px">
+                    <p class="popover-content-link-text">Любительская<br>селфи-палка</p>
+                  </li>
+                  <li class="popover-content-link">
+                    <img class="popover-content-link-img" src="./images/cataloge/profi.jpg"
+                      alt="Профессиональная селфи-палка" width="39px" height="43px">
+                    <p class="popover-content-link-text">Профессиональная<br>селфи-палка</p>
+                  </li>
+                </ul>
+                <div class="popover-total">
+                  <span class="total-merch">Товаров: 2</span>
+                  <span class="amount">Сумма: 2000 ₽</span>
+                </div>
+                <a href="#" class="popover-open-cart">Открыть корзину</a>
+              </div>
             </li>
           </ul>
           <div class="catalog-menu-button">
-            <button class="catalog-menu-sub-button" type="button">Каталог товаров</button>
+            <button class="catalog-menu-sub-button" type="button">Каталог товаров
+              <ul class="catalog-menu-list catalog-menu-list-disabled">
+                <li class="catalog-menu-item">
+                  <ul class="catalog-menu-column">
+                    <li class="catalog-menu-column-item">
+                      <a class="catalog-menu-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="catalog-menu-column-item">
+                      <a class="catalog-menu-link" href="#">Моноподы для селфи</a>
+                    </li>
+                    <li class="catalog-menu-column-item">
+                      <a class="catalog-menu-link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="catalog-menu-item">
+                  <ul class="catalog-menu-column">
+                    <li class="catalog-menu-column-item">
+                      <a class="catalog-menu-link" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="catalog-menu-column-item">
+                      <a class="catalog-menu-link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                <li class="catalog-menu-item">
+                  <ul class="catalog-menu-column">
+                    <li class="catalog-menu-column-item">
+                      <a class="catalog-menu-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </button>
           </div>
           <ul class="navigation-list menu">
             <li class="navigation-item">
-              <a class="navigation-link" href="delivery.html">Доставка</a>
+              <a class="navigation-link" href="#">Доставка</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="guarantee.html">Гарантия</a>
+              <a class="navigation-link" href="#">Гарантия</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="about.html">Контакты</a>
+              <a class="navigation-link" href="#">Контакты</a>
             </li>
           </ul>
-          <div class="catalog-menu">
-            <ul class="catalog-menu-list">
-              <li class="catalog-menu-item column-1">
-                <a class="catalog-menu-link" href="#">Виртуальная реальность</a>
-                <a class="catalog-menu-link" href="#">Моноподы для селфи</a>
-                <a class="catalog-menu-link" href="#">Экшн-камеры</a>
-              </li>
-              <li class="catalog-menu-item column-2">
-                <a class="catalog-menu-link" href="#">Фитнес-браслеты</a>
-                <a class="catalog-menu-link" href="#">Умные часы</a>
-              </li>
-              <li class="catalog-menu-item column-3">
-                <a class="catalog-menu-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </div>
         </nav>
       </div>
     </header>
@@ -364,6 +403,50 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container modal-container-disabled">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="name-email-fields">
+              <p class="field-group">
+                <label for="enter-name">Ваше имя:</label>
+                <input class="enter-name-field field" type="text" id="enter-name" name="enter-name"
+                  placeholder="Введите имя">
+                <span class="field-info">Добавьте имя</span>
+              </p>
+              <p class="field-group">
+                <label for="enter-email">Ваш e-mail:</label>
+                <input class="enter-email-field field /*error*/" type="email" id="enter-email" name="enter-email"
+                  placeholder="Введите e-mail">
+                <span class="field-info">Введите e-mail</span>
+                <span class="field-info field-info-error visually-hidden">Забавынй у вас адрес</span>
+              </p>
+            </div>
+            <div class="delivery-fields">
+              <p class="field-group">
+                <label for="enter-delivery">Что нужно привезти:</label>
+                <input class="delivery-field field" type="text" id="enter-delivery" name="enter-delivery"
+                  placeholder="В свободной форме">
+              </p>
+              <div class="input-number-info"></div>
+              <div class="input-number-info-hover">Постараемся найти, сколько нужно. Привезём сколько получится по
+                требованиям к провозу багажа.</div>
+              <p class="field-group input-number">
+                <label for="enter-number">Количество:</label>
+                <button class="number-control minus" type="button"></button>
+                <input class="number-field field" type="number" id="enter-number" name="enter-number" placeholder="1">
+                <button class="number-control plus" type="button"></button>
+              </p>
+            </div>
+            <button class="primary-button modal-button">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
