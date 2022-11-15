@@ -221,10 +221,17 @@ body {
   min-width: 118px;
 }
 
+.user-menu-item.exit {
+  width: 107px;
+}
+
 .user-menu-item.exit-catalog {
   position: relative;
   width: 80px;
   margin-right: 26px;
+}
+
+.user-menu-link.exit-catalog {
   opacity: 0.3;
 }
 
@@ -236,15 +243,14 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 1;
 }
 
-.user-menu-item.exit-catalog:focus-visible::before {
+.user-menu-link.exit-catalog:focus-visible + .user-menu-item.exit-catalog::before {
   outline: 2px solid var(--battonFocusColor);
   opacity: 1;
 }
 
-.user-menu-item.exit-catalog:focus-visible {
+.user-menu-link.exit-catalog:focus-visible {
   outline: none;
 }
 
@@ -1911,8 +1917,6 @@ body {
   outline: 2px solid var(--battonFocusColor);
 }
 
-
-
 .modal-title {
   font-family: "Raleway";
   font-style: normal;
@@ -2164,7 +2168,7 @@ body {
   margin-right: 16px;
 }
 
-.breadcrumb-item::before {
+.breadcrumb-item:not(:nth-child(3)):before {
   position: absolute;
   content: "";
   background: url(../images/svg/bread-arrow.svg) no-repeat 50% 50%;
@@ -2180,6 +2184,18 @@ body {
   color: var(--primaryTextColor);
   text-decoration: none;
   width: 165px;
+}
+
+.breadcrumb-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumb-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumb-link:focus-visible {
+  outline: 2px solid var(--battonFocusColor);
 }
 
 .catalog-products {
