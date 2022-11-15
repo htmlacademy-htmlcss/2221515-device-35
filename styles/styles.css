@@ -242,10 +242,10 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
+  left: 13px;
 }
 
-.user-menu-link.exit-catalog:focus-visible + .user-menu-item.exit-catalog::before {
+.user-menu-item.exit-catalog:focus-within::before {
   outline: 2px solid var(--battonFocusColor);
   opacity: 1;
 }
