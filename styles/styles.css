@@ -122,7 +122,7 @@ body {
 
 .user-menu {
   margin: 0;
-  margin-left: 31px;
+  margin-left: 33px;
   margin-top: 46px;
   padding: 0;
   display: flex;
@@ -216,7 +216,7 @@ body {
 .header-form button {
   margin: 0;
   padding: 0;
-  width: 160px;
+  width: 158px;
   height: 40px;
   border: 2px solid var(--primaryTextColor);
   border-left: none;
