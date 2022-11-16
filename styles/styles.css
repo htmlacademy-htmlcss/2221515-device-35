@@ -503,6 +503,11 @@ body {
   letter-spacing: 0.2em;
 }
 
+.catalog-menu-sub-button:hover + .catalog-menu-list,
+.catalog-menu-sub-button:focus + .catalog-menu-list {
+  display: flex;
+}
+
 .catalog-menu-button {
   position: relative;
   display: flex;
@@ -558,7 +563,7 @@ body {
   width: 1160px;
   height: 136px;
   flex-wrap: wrap;
-  display: flex;
+  display: none;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -571,10 +576,6 @@ body {
   list-style-type: none;
   top: 78px;
   left: -60px;
-}
-
-.catalog-menu-list-disabled {
-  display: none;
 }
 
 .catalog-menu-item {
