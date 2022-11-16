@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>device</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" type="image/png" href="./images/favikon.png">
   </head>
 
   <body>
@@ -38,17 +39,19 @@
             </li>
             <li class="user-menu-item cart">
               <a class="user-menu-link cart" href="#">Корзина</a>
-              <div class="popover popover-disabled">
+              <div class="popover  popover-disabled">
                 <ul class="popover-content">
                   <li class="popover-content-link">
                     <img class="popover-content-link-img" src="./images/cataloge/diletant.jpg"
                       alt="Любительская селфи-палка" width="39px" height="43px">
                     <p class="popover-content-link-text">Любительская<br>селфи-палка</p>
+                    <div class="popover-close-button"></div>
                   </li>
                   <li class="popover-content-link">
                     <img class="popover-content-link-img" src="./images/cataloge/profi.jpg"
                       alt="Профессиональная селфи-палка" width="39px" height="43px">
                     <p class="popover-content-link-text">Профессиональная<br>селфи-палка</p>
+                    <div class="popover-close-button"></div>
                   </li>
                 </ul>
                 <div class="popover-total">
@@ -119,7 +122,7 @@
             <span class="visually-hidden">Следующий слайд</span>
           </button>
           <ol class="slider-list">
-            <li class="slider-item quadrocopter slider-item-active">
+            <li class="slider-item quadrocopter">
               <img class="slider-image" src="images/quadrocopter.png" alt="Квадрокоптеры" width="560" height="560">
               <span class="visually-hidden">Первый слайд</span>
               <div class="slider-item-description">
@@ -133,11 +136,11 @@
                 </a>
                 <div class="slider-item-info-wrapper">
                   <ul class="slider-item-info">
-                    <li class="slider-item-info-mean">800м</li>
+                    <li class="slider-item-info-mean">800 м</li>
                     <li class="slider-item-info-description">Дальность полета</li>
                   </ul>
                   <ul class="slider-item-info">
-                    <li class="slider-item-info-mean">50м</li>
+                    <li class="slider-item-info-mean">50 м</li>
                     <li class="slider-item-info-description">Радиус поражения</li>
                   </ul>
                 </div>
@@ -160,7 +163,7 @@
                 </ul>
               </div>
             </li>
-            <li class="slider-item monopode">
+            <li class="slider-item monopode slider-item-active">
               <img class="slider-image" src="images/monopode.png" alt="Моноподы" width="560" height="560">
               <span class="visually-hidden">Третий слайд</span>
               <div class="slider-item-description">
@@ -171,15 +174,15 @@
                   <span class="primary-button-text">Подробнее</span>
                 </a>
                 <div class="slider-item-info-wrapper">
-                  <ul class="slider-item-info">
-                    <li class="slider-item-info-mean">8,5м</li>
+                  <ul class="slider-item-info monopode">
+                    <li class="slider-item-info-mean">8,5 м</li>
                     <li class="slider-item-info-description">Длина палки</li>
                   </ul>
-                  <ul class="slider-item-info">
-                    <li class="slider-item-info-mean">5кг</li>
+                  <ul class="slider-item-info monopode">
+                    <li class="slider-item-info-mean">5 кг</li>
                     <li class="slider-item-info-description">Вес палки</li>
                   </ul>
-                  <ul class="slider-item-info">
+                  <ul class="slider-item-info monopode">
                     <li class="slider-item-info-mean">Карбон</li>
                     <li class="slider-item-info-description">Материал</li>
                   </ul>
@@ -204,7 +207,7 @@
             </a>
           </li>
           <li class="main-catalog-item">
-            <a class="main-catalog-link monopod" href="#">Моноподы для селфи
+            <a class="main-catalog-link monopod" href="#">Моноподы<br>для селфи
             </a>
           </li>
           <li class="main-catalog-item">
@@ -422,8 +425,7 @@
                 <label for="enter-email">Ваш e-mail:</label>
                 <input class="enter-email-field field /*error*/" type="email" id="enter-email" name="enter-email"
                   placeholder="Введите e-mail">
-                <span class="field-info">Введите e-mail</span>
-                <span class="field-info field-info-error visually-hidden">Забавынй у вас адрес</span>
+                <span class="field-info /*field-info-error*/">Забавный у вас адрес</span>
               </p>
             </div>
             <div class="delivery-fields">
