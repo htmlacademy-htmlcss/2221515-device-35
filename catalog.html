@@ -14,7 +14,7 @@
         <nav class="navigation catalog">
           <div class="header-logo">
             <a class="main-logo" href="#">
-              <img class="logo-image" src="images/svg/header-main-logo.svg" alt="Девайс" width="145" height="36">
+              <img class="logo-image" src="images/svg/header-main-logo.svg" alt="Девайс." width="145" height="36">
             </a>
           </div>
           <form class="header-form" action="#" method="POST">
@@ -23,7 +23,7 @@
             </label>
             <label class="header-label button">
               <button class="header-search" type="submit">
-                <span class="header-search-button-text"> Найти</span>
+                <span class="header-search-button-text">Найти</span>
               </button>
             </label>
           </form>
@@ -39,24 +39,32 @@
             </li>
             <li class="user-menu-item cart">
               <a class="user-menu-link cart" href="#">Корзина</a>
-              <div class="popover popover-disabled">
-                <ul class="popover-content">
+              <div class="popover /*popover-active*/">
+                <ul class="popover-content-list">
                   <li class="popover-content-link">
-                    <img class="popover-content-link-img" src="./images/cataloge/diletant.jpg"
-                      alt="Любительская селфи-палка" width="39" height="43">
-                    <p class="popover-content-link-text">Любительская<br>селфи-палка</p>
+                    <a class="popover-content" href="#">
+                      <img class="popover-content-link-img" src="./images/cataloge/diletant.jpg"
+                        alt="Любительская селфи-палка." width="39" height="43">
+                      <p class="popover-content-link-text">Любительская<br>селфи-палка</p>
+                    </a>
+                    <button class="popover-close-button" type="button"></button>
                   </li>
                   <li class="popover-content-link">
-                    <img class="popover-content-link-img" src="./images/cataloge/profi.jpg"
-                      alt="Профессиональная селфи-палка" width="39" height="43">
-                    <p class="popover-content-link-text">Профессиональная<br>селфи-палка</p>
+                    <a class="popover-content" href="#">
+                      <img class="popover-content-link-img" src="./images/cataloge/profi.jpg"
+                        alt="Профессиональная селфи-палка." width="39" height="43">
+                      <p class="popover-content-link-text">Профессиональная<br>селфи-палка</p>
+                    </a>
+                    <button class="popover-close-button" type="button"></button>
                   </li>
                 </ul>
                 <div class="popover-total">
                   <span class="total-merch">Товаров: 2</span>
                   <span class="amount">Сумма: 2000 ₽</span>
                 </div>
-                <a href="#" class="popover-open-cart">Открыть корзину</a>
+                <a href="#" class="popover-open-cart">
+                  <span class="popover-open-cart-text">Открыть корзину</span>
+                </a>
               </div>
             </li>
           </ul>
@@ -69,7 +77,7 @@
                     <a class="catalog-menu-link" href="#">Виртуальная реальность</a>
                   </li>
                   <li class="catalog-menu-column-item">
-                    <a class="catalog-menu-link" href="#">Моноподы для селфи</a>
+                    <a class="catalog-menu-link catalog-menu-link-active" href="#">Моноподы для селфи</a>
                   </li>
                   <li class="catalog-menu-column-item">
                     <a class="catalog-menu-link" href="#">Экшн-камеры</a>
@@ -223,7 +231,7 @@
                   <li class="product-card" tabindex="0">
                     <a class="product-card-link" href="product.html">
                       <img class="product-card-image" src="images/cataloge/diletant.jpg" alt="Любительская
-                  селфи-палка" width="360" height="380">
+                  селфи-палка." width="360" height="380">
                       <p class="product-card-new product-card-new-disabled"></p>
                       <div class="product-card-text">
                         <h3 class="product-card-title">Любительская<br>
@@ -235,7 +243,7 @@
                   <li class="product-card" tabindex="0">
                     <a class="product-card-link" href="product.html">
                       <img class="product-card-image" src="images/cataloge/profi.jpg" alt="Профессиональная
-                  селфи-палка" width="360" height="380">
+                  селфи-палка." width="360" height="380">
                       <p class="product-card-new product-card-new-disabled"></p>
                       <div class="product-card-text">
                         <h3 class="product-card-title">Профессиональная селфи-палка</h3>
@@ -246,7 +254,7 @@
                   <li class="product-card" tabindex="0">
                     <a class="product-card-link" href="product.html">
                       <img class="product-card-image" src="images/cataloge/unsink.jpg" alt="Непотопляемая
-                  селфи-палка" width="360" height="380">
+                  селфи-палка." width="360" height="380">
                       <p class="product-card-new product-card-new-disabled"></p>
                       <div class="product-card-text">
                         <h3 class="product-card-title">Непотопляемая<br> селфи-палка</h3>
@@ -257,7 +265,7 @@
                   <li class="product-card" tabindex="0">
                     <a class="product-card-link" href="product.html">
                       <img class="product-card-image" src="images/cataloge/follow-me.jpg"
-                        alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+                        alt="Селфи-палка «Следуй за мной.»" width="360" height="380">
                       <p class="product-card-new product-card-new-disabled"></p>
                       <div class="product-card-text">
                         <h3 class="product-card-title">Селфи-палка «Следуй<br> за мной»</h3>
@@ -309,7 +317,7 @@
       <div class="container">
         <a class="footer-logo" href="#">
           <img class="footer-logo-main" src="images/svg/footer-main-logo.svg" width="145" height="136"
-            alt="Логотип footer device">
+            alt="Логотип footer device.">
         </a>
         <section class="footer-services">
           <address class="footer-contacts-addres">Санкт-Петербург, набережная
