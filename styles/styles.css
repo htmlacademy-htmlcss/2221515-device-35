@@ -2901,7 +2901,7 @@ input[type="number"] {
   background-image: url(../images/svg/selector.svg);
   background-repeat: no-repeat;
   background-position: right 8px top 50%;
-  margin-right: 0;
+  margin-right: 5px;
 }
 
 .select-control:focus-visible {
