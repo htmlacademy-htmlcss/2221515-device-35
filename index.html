@@ -14,11 +14,11 @@
         <nav class="navigation">
           <div class="header-logo">
             <a class="main-logo" href="#">
-              <img class="logo-image" src="images/svg/header-main-logo.svg" alt="Девайс" width="145" height="36">
+              <img class="logo-image" src="images/svg/header-main-logo.svg" alt="Девайс." width="145" height="36">
             </a>
           </div>
           <form class="header-form" action="#" method="POST">
-            <label class="header-label form">
+            <label class="header-label">
               <input type="search" placeholder="Поиск по сайту">
             </label>
             <label class="header-label button">
@@ -39,26 +39,32 @@
             </li>
             <li class="user-menu-item cart">
               <a class="user-menu-link cart" href="#">Корзина</a>
-              <div class="popover  popover-disabled">
-                <ul class="popover-content">
+              <div class="popover /*popover-active*/">
+                <ul class="popover-content-list">
                   <li class="popover-content-link">
-                    <img class="popover-content-link-img" src="./images/cataloge/diletant.jpg"
-                      alt="Любительская селфи-палка" width="39" height="43">
-                    <p class="popover-content-link-text">Любительская<br>селфи-палка</p>
-                    <div class="popover-close-button"></div>
+                    <a class="popover-content" href="#">
+                      <img class="popover-content-link-img" src="./images/cataloge/diletant.jpg"
+                        alt="Любительская селфи-палка." width="39" height="43">
+                      <p class="popover-content-link-text">Любительская<br>селфи-палка</p>
+                    </a>
+                    <button class="popover-close-button" type="button"></button>
                   </li>
                   <li class="popover-content-link">
-                    <img class="popover-content-link-img" src="./images/cataloge/profi.jpg"
-                      alt="Профессиональная селфи-палка" width="39" height="43">
-                    <p class="popover-content-link-text">Профессиональная<br>селфи-палка</p>
-                    <div class="popover-close-button"></div>
+                    <a class="popover-content" href="#">
+                      <img class="popover-content-link-img" src="./images/cataloge/profi.jpg"
+                        alt="Профессиональная селфи-палка." width="39" height="43">
+                      <p class="popover-content-link-text">Профессиональная<br>селфи-палка</p>
+                    </a>
+                    <button class="popover-close-button" type="button"></button>
                   </li>
                 </ul>
                 <div class="popover-total">
                   <span class="total-merch">Товаров: 2</span>
                   <span class="amount">Сумма: 2000 ₽</span>
                 </div>
-                <a href="#" class="popover-open-cart">Открыть корзину</a>
+                <a href="#" class="popover-open-cart">
+                  <span class="popover-open-cart-text">Открыть корзину</span>
+                </a>
               </div>
             </li>
           </ul>
@@ -115,14 +121,14 @@
       <section class="gallery container">
         <div class="slider-wrapper">
           <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий слайд</span>
+            <span class="visually-hidden">Предыдущий слайд.</span>
           </button>
           <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующий слайд</span>
+            <span class="visually-hidden">Следующий слайд.</span>
           </button>
           <ol class="slider-list">
             <li class="slider-item quadrocopter slider-item-active">
-              <img class="slider-image" src="images/quadrocopter.png" alt="Квадрокоптеры" width="560" height="560">
+              <img class="slider-image" src="images/quadrocopter.png" alt="Квадрокоптеры." width="560" height="560">
               <span class="visually-hidden">Первый слайд</span>
               <div class="slider-item-description">
                 <h3 class="slider-item-title">Порхает как бабочка,<br>
@@ -145,8 +151,8 @@
                 </div>
               </div>
             </li>
-            <li class="slider-item fitness-bracelet">
-              <img class="slider-image" src="images/fitness-bracelet.png" alt="Фитнес-браслеты" width="560"
+            <li class="slider-item fitness-bracelet /*slider-item-active*/">
+              <img class="slider-image" src="images/fitness-bracelet.png" alt="Фитнес-браслеты." width="560"
                 height="560">
               <span class="visually-hidden">Второй слайд</span>
               <div class="slider-item-description">
@@ -162,8 +168,8 @@
                 </ul>
               </div>
             </li>
-            <li class="slider-item monopode">
-              <img class="slider-image" src="images/monopode.png" alt="Моноподы" width="560" height="560">
+            <li class="slider-item monopode /*slider-item-active*/">
+              <img class="slider-image" src="images/monopode.png" alt="Моноподы." width="560" height="560">
               <span class="visually-hidden">Третий слайд</span>
               <div class="slider-item-description">
                 <h3 class="slider-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
@@ -191,10 +197,13 @@
           </ol>
           <div class="slider-indicators">
             <button class="slider-indicator active" type="button">
+              <span class="visually-hidden">Текущий слайд.</span>
             </button>
             <button class="slider-indicator" type="button">
+              <span class="visually-hidden">Следующий слайд.</span>
             </button>
             <button class="slider-indicator" type="button">
+              <span class="visually-hidden">Следующий слайд.</span>
             </button>
           </div>
         </div>
@@ -321,8 +330,10 @@
             длительными тест-драйвами, распаковками, а также акции, <br>
             спецпредложения и вот это вот всё.</p>
           <form class="subscribe-form container" action="#" method="post">
-            <input type="email" placeholder="Ваш e-mail">
-            <button type="submit">Подписаться</button>
+            <input class="subscribe-form-email /*subscribe-form-email-error*/" type="email" placeholder="Ваш e-mail">
+            <button type="submit">
+              <span class="submit-text">Подписаться</span>
+            </button>
             <p class="subscribe-text-free">Это бесплатно</p>
           </form>
         </div>
@@ -333,7 +344,7 @@
       <div class="container">
         <a class="footer-logo" href="#">
           <img class="footer-logo-main" src="images/svg/footer-main-logo.svg" width="145" height="136"
-            alt="Логотип footer device">
+            alt="Логотип footer device.">
         </a>
         <section class="footer-services">
           <address class="footer-contacts-addres">Санкт-Петербург, набережная
@@ -405,10 +416,10 @@
         </section>
       </div>
     </footer>
-    <div class="modal-container modal-container-disabled">
+    <div class="modal-container /*modal-container-active*/">
       <div class="modal modal-auth">
         <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
@@ -424,7 +435,7 @@
                 <label for="enter-email">Ваш e-mail:</label>
                 <input class="enter-email-field field /*error*/" type="email" id="enter-email" name="enter-email"
                   placeholder="Введите e-mail">
-                <span class="field-info /*field-info-error*/">Забавный у вас адрес</span>
+                <span class="field-info">Забавный у вас адрес</span>
               </p>
             </div>
             <div class="delivery-fields">
@@ -436,12 +447,17 @@
               <div class="input-number-info"></div>
               <div class="input-number-info-hover">Постараемся найти, сколько нужно. Привезём сколько получится по
                 требованиям к провозу багажа.</div>
-              <p class="field-group input-number">
+              <div class="field-group input-number">
                 <label for="enter-number">Количество:</label>
-                <button class="number-control minus" type="button"></button>
-                <input class="number-field field" type="number" id="enter-number" name="enter-number" placeholder="1">
-                <button class="number-control plus" type="button"></button>
-              </p>
+                <p class="input-number-wrapper /*input-number-wrapper-error*/">
+                  <button class="number-control minus" type="button"></button>
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                  <input class="number-field field" type="number" id="enter-number" name="enter-number" placeholder="1">
+                  <span class="visually-hidden">Введите количество.</span>
+                  <button class="number-control plus" type="button"></button>
+                  <span class="visually-hidden">Увеличить количество.</span>
+                </p>
+              </div>
             </div>
             <button class="primary-button modal-button">Отправить</button>
           </form>
